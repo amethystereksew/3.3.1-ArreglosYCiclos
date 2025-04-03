@@ -27,3 +27,37 @@ console.log("Conteo usando ciclo for:");
 for (const fruta in conteoFrutas) {
     console.log(`${fruta}: ${conteoFrutas[fruta]}`);
 }
+
+// Versión con ciclo while (opcional)
+console.log("\nConteo usando ciclo while:");
+    
+const conteoFrutasWhile = {}; // Nuevo objeto para el while
+let j = 0; // Inicializamos contador
+
+while (j < frutas.length) {
+    const fruta = frutas[j];
+    conteoFrutasWhile[fruta] = (conteoFrutasWhile[fruta] || 0) + 1;
+    j++; // Incrementamos contador
+}
+
+// Mostramos resultados del while
+for (const fruta in conteoFrutasWhile) {
+    console.log(`${fruta}: ${conteoFrutasWhile[fruta]}`);
+}
+
+
+/*Conteo usando ciclo for:
+manzana: 3
+platano: 2
+naranja: 2
+uva: 1
+kiwi: 1
+
+Conteo usando ciclo while:
+manzana: 3
+platano: 2
+naranja: 2
+uva: 1
+kiwi: 1
+*/
+
