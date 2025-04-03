@@ -9,3 +9,6 @@ for (let i = 1; i <= 10; i++) {
 // 1. Arreglo de frutas
 const frutas = ['manzana', 'platano', 'naranja', 'manzana', 'uva', 'banana', 'kiwi', 'naranja', 'manzana'];
 
+// 2. Objeto para almacenar el conteo
+const conteoFrutas = {};
+
