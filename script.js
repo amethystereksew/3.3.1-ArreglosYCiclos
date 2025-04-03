@@ -12,3 +12,18 @@ const frutas = ['manzana', 'platano', 'naranja', 'manzana', 'uva', 'banana', 'ki
 // 2. Objeto para almacenar el conteo
 const conteoFrutas = {};
 
+// 3. Recorremos el arreglo con for
+for (let i = 0; i < frutas.length; i++) {
+    const fruta = frutas[i];
+    if (conteoFrutas[fruta]) {
+        conteoFrutas[fruta]++; // Si ya existe, suma 1
+    } else {
+        conteoFrutas[fruta] = 1; // Si no existe, inicializa con 1
+    }
+}
+
+// 4. Mostramos los resultados
+console.log("Conteo usando ciclo for:");
+for (const fruta in conteoFrutas) {
+    console.log(`${fruta}: ${conteoFrutas[fruta]}`);
+}
